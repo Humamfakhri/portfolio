@@ -1,0 +1,60 @@
+:root {
+  --main-color: #6798D2;
+  --main-color-hover: #5680b4;
+}
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+.color-primary {
+  color: var(--main-color) !important;
+}
+.bg-primary {
+  background-color: var(--main-color) !important;
+}
+.bg-primary:hover {
+  background-color: var(--main-color-hover) !important;
+}
+
+/* NAVBAR */
+.navbar {
+  padding-top: 40px;
+}
+.navbar-brand {
+  margin-right: 150px;
+}
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: var(--main-color);
+  transform: scale(0);
+  transition: .2s;
+}
+.nav-link:hover::after {
+  transform: scale(1);
+}
+.active {
+  font-weight: 700;
+}
+.active::after {
+  transform: scale(1);
+}
+
+/* HERO */
+.hero {
+  padding-top: 100px;
+}
+.hero-img {
+  padding-left: 200px;
+}
+.social-media {
+  margin-top: 100px;
+}
+.social-media a {
+  color: #212529;
+}
+.social-media a:hover {
+  color: var(--main-color);
+}
